@@ -36,7 +36,7 @@ pacific = timezone('US/Pacific')
 timeNowUTC = datetime.utcnow().replace(tzinfo = utc)
 thisYear = timeNowUTC.year
     
-ldir ='/home/jpatterson/shore/code/examples/dates/input_files/' + str(thisYear)
+ldir ='/datetime-example-1-sensorFile.txt'
 
 print "\nChecking OS Dates on Local Files"
 
@@ -81,7 +81,7 @@ for f in sortedFiles:       # parse file os timestamp and make utc date, not tim
     
     files2open.append(f)
         
-lfn = '/home/jpatterson/shore/code/examples/dates/input_files/lastSanLuis.csv'
+lfn = 'datetime-example-1-lastOutputFile.csv'
 
 # open last csv file                                                     
 # check for new timestamps
@@ -187,15 +187,4 @@ else:
         count = count + 1                  
     profilerfile.close()
     
-
-
-
-
-
-
-
- 
-
-
- 
 
